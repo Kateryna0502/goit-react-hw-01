@@ -32,6 +32,7 @@
 //   )
 // }
 
+
 import userData from './userData.json';
 import Profile from './components/Profile/Profile.jsx';
 const App = () => {
