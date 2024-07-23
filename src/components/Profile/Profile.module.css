@@ -9,8 +9,7 @@
     display: block;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
-
+    margin: 0 auto;
     }
 
 .imgProfile {
@@ -32,15 +31,18 @@
 }
 
 .flexItems {
-        border-top: 1px solid gray;
+      display: flex;
+      flex-direction: column; 
+     
+    border-top: 1px solid gray;
         border-right: 1px solid gray;
         padding: 15px;
 }
 
 .boxStatsList {
     background-color: rgb(195, 195, 195);
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex; */
+    justify-content: center;
 }
 
 .name {
