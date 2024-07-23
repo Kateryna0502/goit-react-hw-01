@@ -1,4 +1,4 @@
-import css from "./Profile.module.css";
+import CSS from "./Profile.module.css";
 
 const Profile = ({
 name, 
@@ -10,31 +10,33 @@ stats,
   return (
     <div className={CSS.contProfile}>
 
-  <div>
-    <img className={CSS.imgProfile}
-      src={image}
-      alt="User avatar"
-    />
+      <div className={CSS.listProfile}>
+        <img className={CSS.imgProfile}
+          src={image}
+          alt="User avatar"
+        />
         <p className={CSS.name}>{name}</p>
-        <p className= {CSS.tag}>{tag}</p>
-    <p className={CSS.location}>{location}</p>
-  </div>
-
-  <ul className={CSS.flex}>
-    <li className={CSS.flexItems}>
-          <span className={CSS.list}>Followers</span>
-          <span className={CSS.stats}>{stats.followers}</span>
-    </li>
-    <li>
-      <span className={CSS.list}>Views</span>
-      <span className={CSS.stats}>{stats.views}</span>
-    </li>
-    <li>
-      <span className={CSS.list}>Likes</span>
-      <span className={CSS.stats}>{stats.likes}</span>
-    </li>
-  </ul>
-</div>
-    )
+        <p className={CSS.tag}>{tag}</p>
+        <p className={CSS.location}>{location}</p>
+      </div>
+      
+      <div className={CSS.boxStatsList}>
+        <ul className={CSS.flex}>
+          <li className={CSS.flexItems}>
+            <span className={CSS.list}>Followers</span>
+            <span className={CSS.stats}>{stats.followers}</span>
+          </li>
+          <li>
+            <span className={CSS.list}>Views</span>
+            <span className={CSS.stats}>{stats.views}</span>
+          </li>
+          <li>
+            <span className={CSS.list}>Likes</span>
+            <span className={CSS.stats}>{stats.likes}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 export default Profile

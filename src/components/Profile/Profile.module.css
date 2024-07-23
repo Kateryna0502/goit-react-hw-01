@@ -1,51 +1,71 @@
 .contProfile {
-    border: 10px solid black;
+    border: 2px solid black;
     border-radius: 7px;
+    width: 500px;
+    
+      
 }
+.listProfile {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+
+    }
 
 .imgProfile {
+    /* display: block; */
     border-radius: 50%;
     width: 48px;
-    background-color: black;
-    margin-top: 7px;
+        background-color: black;
+        margin-top: 7px;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 0 auto;
 }
-
 .flex {
     display: flex;
-    gap: 25px;
     margin: 0;
     padding: 0;
-    background-color: gray;
+    
+    
 }
 
 .flexItems {
-    display: flex;
-    flex-direction: column;
+        border-top: 1px solid gray;
+        border-right: 1px solid gray;
+        padding: 15px;
 }
 
-/* .boxStatsList {
-    background-color: gray;
-} */
+.boxStatsList {
+    background-color: rgb(195, 195, 195);
+    /* display: flex; */
+    /* justify-content: center; */
+}
 
 .name {
-    margin-top: 5px;
-    font-weight: 900;
-    margin-bottom: 0;
+    
+margin-top: 5px;
+font-weight: 900;
+margin-bottom: 0;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
 }
 
 .tag {
-    color: rgb(195, 195, 195);
-    margin-top: 5px;
-    margin-bottom: 0;
+color: rgb(195, 195, 195);
+margin-top: 5px;
+margin-bottom: 0;
 }
 
 .location {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: rgb(195, 195, 195);
+margin-top: 5px;
+margin-bottom: 10px;
+color: rgb(195, 195, 195);
 }
 
 .stats {
-    font-weight: 900;
-    color: black;
+font-weight: 900;
+color: black;
 }
