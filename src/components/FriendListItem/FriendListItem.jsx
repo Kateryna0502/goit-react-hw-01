@@ -1,15 +1,43 @@
+import clsx from "clsx";
 import css from "./FriendListItem.module.css";
 const FriendListItem = ({
-name, 
-tag, 
-location, 
-image, 
-stats,
+avatar, name, isOnline = false
 }) => {
-  return (
+    return (
+    
+<div className={css.boxItem}>
+  <img src={avatar} alt="Avatar" width="48" />
+  <p>{name}</p>
+  <p className={clsx(css.status, {
+    [css.online]: isOnline === true,
+    [css.offline]: isOnline === false
+  })}>
+        {isOnline === true ? "Online" : "Offline"}</p>  
+                
+        </div>
+           
+);
+}
 
-<div>
-  <img src="" alt="Avatar" width="48" />
-  <p>Friend name</p>
-  <p>Friend status</p>
-</div>
+// import clsx from "clsx";
+// import css from "../FriendList/FriendList.module.css"
+
+// const FriendListItem = ({ avatar, name, isOnline = false}) => {
+//   return (
+// <>
+//   <div className={css.boxItem}>
+//     <img src={avatar} alt="Avatar" width="48" />
+//     <p>{name}</p>
+//         <p className={clsx(css.status, {
+//           [css.online]: isOnline === true,
+//           [css.offline]: isOnline === false
+//         })}>
+//       {isOnline === true ? "Online" : "Offline"}</p>          
+// </div>
+
+// </>
+
+// );
+// }
+
+export default FriendListItem;

@@ -34,6 +34,7 @@
 
 
 import userData from './userData.json';
+import friends from "./friends.json";
 import Profile from './components/Profile/Profile.jsx';
 const App = () => {
   return (
@@ -45,7 +46,15 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
+       <div>
+        <TransactionHistory transactions={transactions} />
+      </div>
+   </>
+ );
+};
     </>
+    
   );
 };
 
