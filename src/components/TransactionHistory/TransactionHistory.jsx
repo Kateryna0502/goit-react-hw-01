@@ -9,7 +9,8 @@ const TransactionHistory = ({ transactions }) => {
       <th>Amount</th>
       <th>Currency</th>
     </tr>
-  </thead>
+        </thead>
+        
 
     <tbody>
         {transactions.map(({ id, type, amount, currency }) => {
