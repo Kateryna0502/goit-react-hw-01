@@ -15,11 +15,9 @@ const TransactionHistory = ({ transactions }) => {
         {transactions.map(({ id, type, amount, currency }) => {
             return (
             <tr className={css.id} key={id}>
-                             
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
-                
             </tr>
             );}
         )}
@@ -29,5 +27,4 @@ const TransactionHistory = ({ transactions }) => {
 
     )
 }
-
 export default TransactionHistory;
