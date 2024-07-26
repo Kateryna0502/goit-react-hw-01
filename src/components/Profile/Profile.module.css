@@ -3,7 +3,12 @@
     border-radius: 7px;
     width: 500px;
 }
-
+.listProfile {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 .imgProfile {
     border-radius: 50%;
     width: 48px;
@@ -19,6 +24,7 @@
 
 .flexItem {
     display: flex;
+    list-style-type: none;
     flex-direction: column;
     border-top: 1px solid gray;
     border-right: 1px solid gray;
