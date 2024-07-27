@@ -47,6 +47,11 @@ flex-direction: column;
     background-color: rgb(195, 195, 195);
     display: flex;
     justify-content: center;
+    border-top: 3px solid black;
+        border-right: 4px dotted blue;
+        border-bottom: 4px dashed green;
+        border-left: 4px double red;
+    }
 }
 
 .name {
