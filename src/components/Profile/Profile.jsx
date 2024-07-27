@@ -26,11 +26,11 @@ stats,
             <span className={css.list}>Followers</span>
             <span className={css.stats}>{stats.followers}</span>
           </li>
-          <li>
+          <li className={css.flexItems}>
             <span className={css.list}>Views</span>
             <span className={css.stats}>{stats.views}</span>
           </li>
-          <li>
+          <li className={css.flexItems}>
             <span className={css.list}>Likes</span>
             <span className={css.stats}>{stats.likes}</span>
           </li>
