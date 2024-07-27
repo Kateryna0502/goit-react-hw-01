@@ -10,10 +10,7 @@
     align-items: center;
      margin: 0 auto;
 
-    /* display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; */
+    
 }
 .imgProfile {
     border-radius: 50%;
@@ -34,7 +31,7 @@
 .flexItem {
 display: flex;
 flex-direction: column;
-border: 3px solid #0b0b0b;
+border: 2px solid black;
 padding: 15px;
     
 }
