@@ -4,10 +4,15 @@
     width: 500px;
 }
 .listProfile {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+     margin: 0 auto;
+    /* display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
 }
 .imgProfile {
     border-radius: 50%;
