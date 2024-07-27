@@ -4,7 +4,21 @@
     border: 1px solid black;
     width: 500px;
 }
-
+table,
+th,
+td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+}
+th,
+td {
+    padding: 15px;
+}
 tbody tr:nth-child(even) {
     background-color: rgb(195, 195, 195);
     ;
