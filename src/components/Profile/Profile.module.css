@@ -24,12 +24,12 @@
 
 .flex {
     display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 85px;
-        padding: 15px;
-        list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding: 15px;
+    list-style: none;
 }
 .flexItem {
     display: flex;
@@ -39,12 +39,16 @@
     border-right: 1px solid gray;
     padding: 15px;
 }
-
-.statsList {
+.stats {
+    display: flex;
+    
+        flex-direction: column;
+}
+/* .statsList {
     display: flex;
     margin: 0;
     padding: 0;
-}
+} */
 
 
 
